@@ -38,5 +38,8 @@
         <symbol id="icon-to-right" viewBox="0 0 44 32">
             <path fill="none" stroke="var(--color1, #9c69e2)" stroke-linejoin="round" stroke-linecap="round" stroke-width="4" d="M30 30l12-14L30 2M42 16H2"/>
         </symbol>
+        <symbol id="icon-cross" viewBox="0 0 32 32">
+<path d="M26.667 7.303l-1.97-1.97-7.808 7.808-7.808-7.808-1.97 1.97 7.808 7.808-7.808 7.808 1.97 1.97 7.808-7.808 7.808 7.808 1.97-1.97-7.808-7.808 7.808-7.808z"></path>
+</symbol>
     </defs>
 </svg>
