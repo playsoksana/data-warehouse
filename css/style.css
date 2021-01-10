@@ -7,6 +7,7 @@
   --button-more: #f063b8;
   --social: rgba(33, 35, 83, 0.1);
   --mes: rgba(156, 105, 226, 0.1);
+  --cubic: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 body {
@@ -73,7 +74,8 @@ h3 {
   border-radius: 50px;
   border: 1px solid transparent;
   box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
-}
+ }
+
 
 .button:active {
   outline: none;
@@ -136,6 +138,7 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  
 }
 
 .header .link:hover,
@@ -153,6 +156,7 @@ h3 {
 .header .item > .link {
   display: block;
   padding: 17px 0;
+  transition: color 250ms var(--cubic);
 }
 
 .menu {
@@ -172,14 +176,17 @@ h3 {
   left: 0;
 }
 
-.sub {
+.sub .link {
+  transition: color 250ms var(--cubic);
+
   text-align: center;
   font-size: 16px;
   font-weight: 400;
   line-height: 2.5;
+  
 }
 
-.sub:hover {
+.link:hover {
   font-weight: 700;
   color: var(--focus-color);
   text-align: center;
@@ -686,6 +693,7 @@ h3 {
   width: 100%;
   height: 100%;
   color: var(--social);
+  transition: color 250ms var(--cubic);
 }
 .social-item .social-link:hover,
 .social-item .social-link:focus {
@@ -716,6 +724,7 @@ h3 {
   border: 1px solid transparent;
   border-radius: 50%;
   color: var(--mes);
+  transition: color 250ms var(--cubic);
 }
 
 .footer .message-link:focus,
