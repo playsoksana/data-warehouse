@@ -227,7 +227,7 @@
                             <a href="" class="link">Learn more</a>
                         </div>                    
                     </li>
-                    <li class="item">                        
+                    <li class="item item-button">                        
                             <a href="./image/boll.png" class="link link-download" download>
                                 <button type="button" class="button" data-open-modal>
                                     Request Demo
@@ -347,21 +347,6 @@
         </div>
         
     </div>
-    <script>
-        const refs = {
-            openModalBtn: document.querySelector("[data-open-modal]"),
-            closeModalBtn: document.querySelector("[data-close-modal]"),
-            backdrop: document.querySelector("[data-backdrop]"),
-        };
-        refs.openModalBtn.addEventListener("click", toggleModal);
-        refs.closeModalBtn.addEventListener("click", toggleModal);
-        refs.backdrop.addEventListener("click", logBackdropClick);
-        function toggleModal() {
-            refs.backdrop.classList.toggle("is-hiden");
-        }
-        function logBackdropClick() {
-            console.log("");
-        }
-    </script>
+    <script src="./js/modal.js"></script>
 </body>
 </html>
