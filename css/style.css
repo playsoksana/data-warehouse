@@ -99,6 +99,7 @@ h3 {
 .header {
   width: 100%;
   position: fixed;
+  
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -228,15 +229,14 @@ h3 {
   margin-bottom: 50px;
 }
 
-.hero .conteiner-button {
-  display: inline-flex;
-  font-weight: 800;
-}
+.hero .button {
+   font-family: "Nunito", sans-serif;
+font-size: 18px;
+font-weight: 800;
+line-height: 1.8;
+letter-spacing: 0em;
+text-align: center;
 
-.conteiner-button .link {
-  text-align: center;
-  height: 100%;
-  width: 100%;
   padding: 16px 37px 15px;
   border-radius: 50px;
 
@@ -883,3 +883,78 @@ h3 {
     opacity: 1;
   }
 }
+
+/* backdrop-form */
+.backdrop-form {
+  position: fixed;
+  z-index: 10;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(58, 1, 139, 0.7);
+}
+
+.backdrop-form .modal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: var(--white);
+  width: 500px;
+  padding: 40px;
+}
+
+.modal .button-form {
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+}
+
+.conteiner-form {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.modal .title-form {
+  display: inline-block;
+  
+  font-size: 20px;
+  font-weight: 700;
+  line-height: 2;
+  
+  color: var(--title-color);
+  margin-bottom: 10px;
+}
+
+.form .lable-text {
+  display: block;
+
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.1;  
+}
+
+.form .input {
+  width: 100%;
+  border-radius: 4px;
+  padding: 10px 15px;
+}
+
+.textarea {
+  resize: none;
+  width: 100%;
+  border-radius: 4px;
+  padding: 15px;
+}
+
+
+
+
+

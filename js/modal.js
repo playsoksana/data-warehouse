@@ -14,3 +14,20 @@
             console.log("");
         }
 })();
+
+(() => {
+    const refs = {
+              openModalBtn: document.querySelector("[data-open-modal-form]"),
+              closeModalBtn: document.querySelector("[data-close-modal-form]"),
+              backdrop: document.querySelector("[data-backdrop-form]"),
+          };
+          refs.openModalBtn.addEventListener("click", toggleModal);
+          refs.closeModalBtn.addEventListener("click", toggleModal);
+          refs.backdrop.addEventListener("click", logBackdropClick);
+          function toggleModal() {
+              refs.backdrop.classList.toggle("is-hiden");
+          }
+          function logBackdropClick() {
+              console.log("");
+          }
+  })();

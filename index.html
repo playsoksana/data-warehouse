@@ -75,7 +75,7 @@
                 </button>
                 </a>
             </div>
-        </header>
+    </header>
     <main class="main">
         <section class="hero">
         <div class="conteiner">            
@@ -83,9 +83,7 @@
                 <p class="paragraph">Data Warehouse is a data storage area that has been
                     tested for security, so you can store your data here
                     safely but not be afraid of being stolen by others.</p>
-                <div class="conteiner-button">
-                    <a href="#" class="link">Learn more</a>
-                </div>
+                <button class="button" data-open-modal-form>Learn more</button>
                 <div class="background"></div>
             </div>
         </section>
@@ -242,7 +240,8 @@
                 </ul>
             </div>
         </section>
-        <footer class="footer">
+    </main>
+    <footer class="footer">
             <div class="conteiner">
                 <div class="contacts">
                     <nav class="navigation">
@@ -319,12 +318,8 @@
                         </svg>
                     </a>
                 </div>
-                
-
-                
             </div>
-        </footer>
-    </main>
+    </footer>    
     <!-- modal -->
     <div class="backdrop is-hiden" data-backdrop>
         <div class="modal">
@@ -349,7 +344,68 @@
                 </svg>
             </button>
         </div>
-        
+    </div>
+    <div class="backdrop-form" data-backdrop-form>
+        <div class="modal">
+            <button type="button" class="button-form" data-close-modal-form>
+                <svg class="icon-form" width="15" height="15">
+                    <use href="./image/icon.svg#icon-cross"></use>
+                    </svg>
+            </button>
+            
+            <form class="form" autocomplete="off">
+            <b class="title-form">Register and get a limited week for free!</b>
+        <div class="conteiner-form">
+            <label class="lable">
+                <span class="lable-text">
+                    Name
+                </span>
+                <input type="text" name="name" class="input">
+            </label>            
+        </div>
+        <div class="conteiner-form">
+            <label class="lable">
+                <span class="lable-text">
+                    Phone number
+                </span>
+                <input type="tel" name="tel" class="input" autocomplete="on">
+            </label>
+        </div>
+        <div class="conteiner-form">
+            <label class=lable>
+                <span class="lable-text">
+                    Email
+                </span>
+                <input type="email" name="email" class="input" autocomplete="on">
+            </label>
+        </div>   
+        <div class="conteiner-form">
+            <label class="lable">
+                <span class="lable-text">
+                    Password
+                </span>
+                <input type="password" name="password" class="input">
+            </label>
+        </div> 
+        <div class="conteiner-form">
+            <label  class="lable-form">
+                <span class="lable-text">
+                    Leave your comments and suggestion
+                </span>
+                <textarea class="textarea" name="textarea" rows="6" placeholder="Enter text"></textarea>
+            </label>
+        </div>  
+        <label class="lable-form">
+            <span class="lable-text">
+                I agree with the terms of
+            <a href="#"> The user Agreement</a>
+            </span>
+            <input type="checkbox">
+        </label>
+        <button type="submit">Send</button> 
+        </form>
+        </div>
+    </div>
     </div>
     <script src="./js/modal.js"></script>
 </body>
