@@ -360,7 +360,10 @@
                 <span class="lable-text">
                     Name
                 </span>
-                <input type="text" name="name" class="input">
+                <input type="text" name="name" class="input" placeholder=" ">
+                <svg class="icons" width="18" height="18">
+                    <use href="./image/icon.svg#icon-user"></use>
+                </svg>
             </label>            
         </div>
         <div class="conteiner-form">
@@ -368,7 +371,10 @@
                 <span class="lable-text">
                     Phone number
                 </span>
-                <input type="tel" name="tel" class="input" autocomplete="on">
+                <input type="tel" name="tel" class="input" autocomplete="on" placeholder=" ">
+                <svg class="icons" width="18" height="18">
+                    <use href="./image/icon.svg#icon-mobile"></use>
+                </svg>
             </label>
         </div>
         <div class="conteiner-form">
@@ -376,7 +382,10 @@
                 <span class="lable-text">
                     Email
                 </span>
-                <input type="email" name="email" class="input" autocomplete="on">
+                <input type="email" name="email" class="input" autocomplete="on" placeholder=" ">
+                <svg class="icons" width="18" height="18">
+                    <use href="./image/icon.svg#icon-mail2"></use>
+                </svg>
             </label>
         </div>   
         <div class="conteiner-form">
@@ -384,7 +393,10 @@
                 <span class="lable-text">
                     Password
                 </span>
-                <input type="password" name="password" class="input">
+                <input type="password" name="password" class="input" placeholder=" ">
+                <svg class="icons" width="18" height="18">
+                    <use href="./image/icon.svg#icon-lock"></use>
+                </svg>
             </label>
         </div> 
         <div class="conteiner-form">
@@ -395,14 +407,23 @@
                 <textarea class="textarea" name="textarea" rows="6" placeholder="Enter text"></textarea>
             </label>
         </div>  
-        <label class="lable-form">
-            <span class="lable-text">
+        <div  class="lable-form">
+        <label>
+            <span class="check-text">
                 I agree with the terms of
-            <a href="#"> The user Agreement</a>
+            <a href="#">the user Agreement</a>
             </span>
-            <input type="checkbox">
+            <input type="checkbox" class="checkbox" name="user-agreement">
+            <span class="kast-checkbox">
+                <svg class="icon-checkbox" width="20" height="20">
+                    <use href="./image/icon.svg#icon-checkmark"></use>
+                </svg>
+            </span>
         </label>
-        <button type="submit">Send</button> 
+        </div>
+        <div class="conteiner-send">
+            <button class="send" type="submit">Send</button>
+        </div>
         </form>
         </div>
     </div>

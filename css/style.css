@@ -74,8 +74,7 @@ h3 {
   border-radius: 50px;
   border: 1px solid transparent;
   box-shadow: 0px 5px 5px 0px rgba(75, 93, 104, 0.1);
- }
-
+}
 
 .button:active {
   outline: none;
@@ -99,7 +98,7 @@ h3 {
 .header {
   width: 100%;
   position: fixed;
-  
+
   top: 0;
   left: 50%;
   transform: translateX(-50%);
@@ -139,7 +138,6 @@ h3 {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  
 }
 
 .header .link:hover,
@@ -184,7 +182,6 @@ h3 {
   font-size: 16px;
   font-weight: 400;
   line-height: 2.5;
-  
 }
 
 .link:hover {
@@ -230,12 +227,12 @@ h3 {
 }
 
 .hero .button {
-   font-family: "Nunito", sans-serif;
-font-size: 18px;
-font-weight: 800;
-line-height: 1.8;
-letter-spacing: 0em;
-text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.8;
+  letter-spacing: 0em;
+  text-align: center;
 
   padding: 16px 37px 15px;
   border-radius: 50px;
@@ -763,19 +760,17 @@ text-align: center;
   transform: translate(-50%, -50%) scale(1);
   opacity: 1;
   transition: transform 250ms linear;
-  
+
   width: 800px;
   padding: 40px 62px 79px;
   top: 50%;
 
   background-color: var(--white);
-  
 }
 
 .backdrop.is-hiden .modal {
   transform: translate(-50%, -50%) scale(0.5);
   opacity: 0;
-  
 }
 
 .header-modal {
@@ -794,7 +789,6 @@ text-align: center;
   width: 80px;
   height: 80px;
 }
-
 
 .title-modal {
   display: flex;
@@ -849,10 +843,7 @@ text-align: center;
 
 .icon-close {
   display: block;
-  
 }
-
-
 
 .slab-conteiner {
   display: inline-block;
@@ -863,9 +854,7 @@ text-align: center;
   background-repeat: no-repeat;
   background-size: contain;
   transform: rotateY(0deg);
-  animation: ball 9000ms infinite; 
-
-  
+  animation: ball 9000ms infinite;
 }
 
 @keyframes ball {
@@ -878,13 +867,18 @@ text-align: center;
     opacity: 0.3;
   }
 
-  100%{
+  100% {
     transform: perspective(400px) rotateY(0deg);
     opacity: 1;
   }
 }
 
 /* backdrop-form */
+.form .checkbox {
+  position: absolute;
+  appearance: none;
+}
+
 .backdrop-form {
   position: fixed;
   z-index: 10;
@@ -918,17 +912,18 @@ text-align: center;
 }
 
 .conteiner-form {
+  position: relative;
   width: 100%;
   margin-bottom: 20px;
 }
 
 .modal .title-form {
   display: inline-block;
-  
+
   font-size: 20px;
   font-weight: 700;
   line-height: 2;
-  
+
   color: var(--title-color);
   margin-bottom: 10px;
 }
@@ -938,23 +933,108 @@ text-align: center;
 
   font-size: 16px;
   font-weight: 300;
-  line-height: 1.1;  
+  line-height: 1.1;
 }
 
 .form .input {
   width: 100%;
   border-radius: 4px;
-  padding: 10px 15px;
+  padding: 10px 45px;
+  border: 1px solid var(--primary-color);
 }
 
-.textarea {
+.form .textarea {
   resize: none;
   width: 100%;
   border-radius: 4px;
   padding: 15px;
 }
 
+.form .lable-form {
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
 
+.form .kast-checkbox {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  border: 2px solid var(--title-color);
+  border-radius: 4px;
+  color: white;
+  background-color: white;
+  transition: background-color 250ms var(--cubic),
+    border-color 250ms var(--cubic);
+}
 
+.form .icon-checkbox {
+  width: 100%;
+  height: 100%;
+  fill: currentColor;
+}
 
+.form .checkbox:checked + .kast-checkbox {
+  background-color: var(--button-more);
+  border-color: transparent;
+}
+
+.check-text {
+  margin-left: 30px;
+}
+
+.form .send {
+  padding: 10px 35px;
+  display: flex;
+  margin: 0 auto;
+
+  font-family: "Nunito", sans-serif;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 1.1;
+  text-align: center;
+  color: var(--white);
+  border-radius: 8px;
+  border: 2px solid transparent;
+  background-origin: border-box;
+  cursor: pointer;
+
+  background-color: var(--focus-color);
+  transition: background-color 250ms var(--cubic);
+}
+
+/* .form .conteiner-send {
+  display: flex;
+} */
+
+.form .send:hover,
+.form .send:focus {
+  background-color: var(--button-more);
+}
+
+.form .input:focus,
+.form .textarea:focus {
+  outline-color: var(--button-more);
+  border: 1px solid var(--button-more);
+}
+
+.form .icons {
+  fill: var(--primary-color);
+  position: absolute;
+  bottom: calc(50% - 27px);
+  transform: translateY(-50%);
+  left: 15px;
+}
+
+.form .input:not(:placeholder-shown) + .icons,
+.form .input:focus + .icons {
+  fill: var(--button-more);
+}
