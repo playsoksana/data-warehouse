@@ -897,6 +897,13 @@ h3 {
   background-color: var(--white);
   width: 500px;
   padding: 40px;
+  transition: transform 350ms var(--cubic), opacity 350ms var(--cubic);
+  opacity: 1;
+}
+
+.backdrop-form.is-hiden .modal {
+  transform: translate(-50%, -50%) scale(0.7);
+  opacity: 0;
 }
 
 .modal .button-form {
@@ -909,12 +916,6 @@ h3 {
   border-radius: 50%;
   width: 30px;
   height: 30px;
-}
-
-.conteiner-form {
-  position: relative;
-  width: 100%;
-  margin-bottom: 20px;
 }
 
 .modal .title-form {
@@ -949,8 +950,9 @@ h3 {
   border-radius: 4px;
   padding: 15px;
 }
-
+.form .lable,
 .form .lable-form {
+  display: block;
   position: relative;
   width: 100%;
   margin-bottom: 20px;
@@ -1029,7 +1031,7 @@ h3 {
 .form .icons {
   fill: var(--primary-color);
   position: absolute;
-  bottom: calc(50% - 27px);
+  top: calc(50% + 8px);
   transform: translateY(-50%);
   left: 15px;
 }
